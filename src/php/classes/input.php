@@ -1,6 +1,5 @@
 <?php
 class input{
-    //Este fue creado en la pelicula -oopls 11
     public static function exists($type = 'POST'){
         switch($type){
             case 'POST':

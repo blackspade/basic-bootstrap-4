@@ -1,5 +1,4 @@
 <?php
-//este tutorial se encuentra en oopls 19 2min 30se
 
 class cookie{
     public static function exists($name){
@@ -14,14 +13,10 @@ class cookie{
         if(setcookie($name, $value, time() + $expiry, '/')){
             return true;
         }
-        
         return false;
-        
     }
     
     public static function delete($name){
-      //delete cookie
-      //cambiar informacion del cookie 
       self::put($name, '', time() -1);
     }
 }
