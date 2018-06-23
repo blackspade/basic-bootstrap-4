@@ -18,3 +18,7 @@ function hyper_escape($str){
 function cash_format($e){
     return " $".number_format($e,2);
 }
+
+function is_ajax_request(){
+    return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest';
+}
