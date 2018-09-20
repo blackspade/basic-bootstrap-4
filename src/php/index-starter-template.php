@@ -7,9 +7,11 @@ spl_autoload_register(function($class){
 });
 
 //Database Connection Call 
-
 $con = mysqli_connect(config::get('mysql|host'), config::get('mysql|user'), config::get('mysql|pass'), config::get('mysql|db'), 3306);
 
+
+//Standard IP Address Grab
+$ip = $_SERVER['REMOTE_ADDR'];
 
 //JSON REQUEST Check Sanitize.php in Functions
 if(is_ajax_request()){
@@ -22,7 +24,7 @@ if(is_ajax_request()){
 $sql = "SELECT * FROM `table`";
 $query = mysqli_query($con, $sql);
 
-while ($row = mysqli_fetch_row($$query)){
+while ($row = mysqli_fetch_row($query)){
 	//Index Data
 	$data = $row[0];
 }
