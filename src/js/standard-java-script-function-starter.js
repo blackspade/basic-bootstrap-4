@@ -53,3 +53,11 @@ function passwordScore(pass) {
 
     return parseInt(score);
 }
+
+/*GET Variables from the URL*/
+window.onload = function(){
+	var myParam = location.search.split('paramater=')[1];
+	if(myParam == "1"){
+		console.log("Yes");
+	}
+}

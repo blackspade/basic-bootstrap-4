@@ -18,6 +18,19 @@ if(is_ajax_request()){
 	exit();
 }
 
+//STANDARD QUERY LOOP OF SQL QUERY
+$sql = "SELECT * FROM `table`";
+$query = mysqli_query($con, $sql);
+
+while ($row = mysqli_fetch_row($$query)){
+	//Index Data
+	$data = $row[0];
+}
+
+//CHECK FOR A POST REQUEST
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+	
+}
 ?>
 
 
