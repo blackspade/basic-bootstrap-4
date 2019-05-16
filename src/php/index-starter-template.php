@@ -10,7 +10,7 @@ spl_autoload_register(function($class){
 $con = mysqli_connect(config::get('mysql|host'), config::get('mysql|user'), config::get('mysql|pass'), config::get('mysql|db'), 3306);
 
 
-//Standard IP Address Grab
+//IP Address
 $ip = $_SERVER['REMOTE_ADDR'];
 
 //JSON REQUEST Check Sanitize.php in Functions
