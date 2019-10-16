@@ -10,18 +10,17 @@ spl_autoload_register(function($class){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<meta name="description" content=""/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-	<title>Anonymous | Password Reset</title>
-	<style>
-	.top-justify{
-		margin-top:50px;
-	}
-	</style>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="description" content=""/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<title>Anonymous | Password Reset</title>
+<style>
+.top-justify{
+	margin-top:50px;
+}
+</style>
 </head>
 <body>
 
@@ -47,7 +46,6 @@ spl_autoload_register(function($class){
 <div class="container top-justify">
 	<div class="row justify-content-center">
 		<div class="col-md-6">
-			<!-- form card reset password -->
             <div class="card card-outline-secondary">
               <div class="card-header">
                 <h3 class="mb-0">Password Reset</h3>
@@ -64,8 +62,7 @@ spl_autoload_register(function($class){
                   </div>
                 </form>
               </div>
-            </div>
-			<!-- /form card reset password -->				
+            </div>	
 		</div>
 	</div>
 </div>

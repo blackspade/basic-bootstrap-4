@@ -6,28 +6,21 @@ spl_autoload_register(function($class){
     require_once '../php/classes/'.$class.'.php';
 });
 
-//$con = mysqli_connect(config::get('mysql|host'), config::get('mysql|user'), config::get('mysql|pass'), config::get('mysql|db'), 3306);
-
-//$obj = new User($con);
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<meta name="description" content=""/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-	<title>Anonymous | Login</title>
-	<style>
-	.top-justify{
-		margin-top:50px;
-	}
-	</style>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="description" content=""/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<title>Anonymous | Login</title>
+<style>
+.top-justify{
+	margin-top:50px;
+}
+</style>
 </head>
 <body>
 
