@@ -33,6 +33,30 @@ while ($row = mysqli_fetch_row($query)){
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	
 }
+
+//PREPARED STATEMENTS 
+
+$con = new mysqli(config::get('mysql|host'), config::get('mysql|user'), config::get('mysql|pass'), config::get('mysql|db'), 3306);
+
+$SQL = "SQL STATEMENT HERE";	
+	
+$var = "";
+
+if (!($stmt = $con->prepare($SQL))) {
+	echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+}
+
+if (!$stmt->bind_param("s", $var)) {
+	echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+}
+
+if (!$stmt->execute()) {
+	echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+}else{
+	echo $name.$bus_email.$other.$bus_name.$address.$city.$zip.$phone.$job.$domain.$provider.$pin;
+	
+}
+
 ?>
 
 
