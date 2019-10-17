@@ -9,7 +9,7 @@ spl_autoload_register(function($class){
 
 if(isset($_SESSION['loggedInSession'])){
 
-echo "Welcome!";
+echo "Welcome! <a href='../logout/'>Logout</a>";
 	
 }else{
 	redirect::to("../login/?status=");
