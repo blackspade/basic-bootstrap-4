@@ -3,10 +3,10 @@ session_start();
 
 $GLOBALS['config'] = array(
     'mysql' => array(
-        'host' => 'localhost',
-        'user' => 'root',
+        'host' => '',
+        'user' => '',
         'pass' => '',
-        'db' => 'auth-main'
+        'db' => ''
      ),
     'settings' => array(
         'show_create_account_public'  => 1,  // 0 MEANS NO, 1 MEANS YES
